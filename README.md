@@ -80,5 +80,5 @@ of the config file will look like this:
 6.  Cleanup: remove the broker container:
 
     ```bash
-   $ ./stop_rm_broker.sh 
-   ```
+    $ ./stop_rm_broker.sh 
+    ```
