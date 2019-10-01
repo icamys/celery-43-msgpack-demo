@@ -9,7 +9,7 @@ Bug reproduction steps:
         && pip install -r requirements.txt
     ```
 
-2. Start the broker
+2. Start the broker docker container:
 
     ```bash
     $ ./start_broker.sh
