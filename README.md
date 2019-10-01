@@ -21,7 +21,7 @@ Bug reproduction steps:
    ./start_worker.sh
     ```
 
-4. Now you should get a decode message like this:
+4. Now you should get a decode error message like this:
 
     ```bash
    [2019-10-01 13:33:12,077: CRITICAL/MainProcess] Can't decode message body: DecodeError(ExtraData([[], {}, ...
