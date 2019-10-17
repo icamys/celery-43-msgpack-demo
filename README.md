@@ -54,27 +54,27 @@ of the config file will look like this:
                     
     
     [tasks]
-      . ns:create_list
-      . ns:print_list_with_number
+      . create_list
+      . print_list_with_number
     
     [2019-10-01 13:37:05,625: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
     [2019-10-01 13:37:05,638: INFO/MainProcess] mingle: searching for neighbors
     [2019-10-01 13:37:06,669: INFO/MainProcess] mingle: all alone
     [2019-10-01 13:37:06,700: INFO/MainProcess] celery@office-1 ready.
-    [2019-10-01 13:37:06,701: INFO/MainProcess] Received task: ns:create_list[987a2638-c9fe-43d3-826c-d87f321b463f]  
-    [2019-10-01 13:37:06,845: INFO/MainProcess] Received task: ns:print_list_with_number[bc5eddec-1263-4551-bdbb-050667eefc82]  
-    [2019-10-01 13:37:06,846: INFO/ForkPoolWorker-8] Task ns:create_list[987a2638-c9fe-43d3-826c-d87f321b463f] succeeded in 0.03962553100063815s: ['google.com']
-    [2019-10-01 13:37:06,846: INFO/MainProcess] Received task: ns:print_list_with_number[6c0d7a3c-bbff-4ecb-8d68-ee2a576f1086]  
+    [2019-10-01 13:37:06,701: INFO/MainProcess] Received task: create_list[987a2638-c9fe-43d3-826c-d87f321b463f]  
+    [2019-10-01 13:37:06,845: INFO/MainProcess] Received task: print_list_with_number[bc5eddec-1263-4551-bdbb-050667eefc82]  
+    [2019-10-01 13:37:06,846: INFO/ForkPoolWorker-8] Task create_list[987a2638-c9fe-43d3-826c-d87f321b463f] succeeded in 0.03962553100063815s: ['google.com']
+    [2019-10-01 13:37:06,846: INFO/MainProcess] Received task: print_list_with_number[6c0d7a3c-bbff-4ecb-8d68-ee2a576f1086]  
     [2019-10-01 13:37:06,846: INFO/ForkPoolWorker-2] ['google.com'] 1
     [2019-10-01 13:37:06,848: INFO/ForkPoolWorker-4] ['google.com'] 2
-    [2019-10-01 13:37:06,865: INFO/ForkPoolWorker-2] Task ns:print_list_with_number[bc5eddec-1263-4551-bdbb-050667eefc82] succeeded in 0.01884706000055303s: ['google.com']
-    [2019-10-01 13:37:06,866: INFO/MainProcess] Received task: ns:print_list_with_number[74969f15-6306-40d4-9e55-1cef594354d5]  
+    [2019-10-01 13:37:06,865: INFO/ForkPoolWorker-2] Task print_list_with_number[bc5eddec-1263-4551-bdbb-050667eefc82] succeeded in 0.01884706000055303s: ['google.com']
+    [2019-10-01 13:37:06,866: INFO/MainProcess] Received task: print_list_with_number[74969f15-6306-40d4-9e55-1cef594354d5]  
     [2019-10-01 13:37:06,867: INFO/ForkPoolWorker-6] ['google.com'] 2
-    [2019-10-01 13:37:06,867: INFO/ForkPoolWorker-6] Task ns:print_list_with_number[74969f15-6306-40d4-9e55-1cef594354d5] succeeded in 0.0006498500006273389s: ['google.com']
-    [2019-10-01 13:37:06,869: INFO/ForkPoolWorker-4] Task ns:print_list_with_number[6c0d7a3c-bbff-4ecb-8d68-ee2a576f1086] succeeded in 0.021286719998897752s: ['google.com']
-    [2019-10-01 13:37:06,869: INFO/MainProcess] Received task: ns:print_list_with_number[04147cd4-1b2a-4143-98f8-02749dbbaa2b]  
+    [2019-10-01 13:37:06,867: INFO/ForkPoolWorker-6] Task print_list_with_number[74969f15-6306-40d4-9e55-1cef594354d5] succeeded in 0.0006498500006273389s: ['google.com']
+    [2019-10-01 13:37:06,869: INFO/ForkPoolWorker-4] Task print_list_with_number[6c0d7a3c-bbff-4ecb-8d68-ee2a576f1086] succeeded in 0.021286719998897752s: ['google.com']
+    [2019-10-01 13:37:06,869: INFO/MainProcess] Received task: print_list_with_number[04147cd4-1b2a-4143-98f8-02749dbbaa2b]  
     [2019-10-01 13:37:06,870: INFO/ForkPoolWorker-8] ['google.com'] 3
-    [2019-10-01 13:37:06,870: INFO/ForkPoolWorker-8] Task ns:print_list_with_number[04147cd4-1b2a-4143-98f8-02749dbbaa2b] succeeded in 0.00020611299987649545s: ['google.com']
+    [2019-10-01 13:37:06,870: INFO/ForkPoolWorker-8] Task print_list_with_number[04147cd4-1b2a-4143-98f8-02749dbbaa2b] succeeded in 0.00020611299987649545s: ['google.com']
    ```
 
 6.  Cleanup: remove the broker container:
